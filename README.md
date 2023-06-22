@@ -19,3 +19,10 @@ In the DNS and ICMP log, you find the following information:
 Now that you have captured data packets using a network analyzer tool, it is your job to identify which network protocol and service were impacted by this incident. Then, you will need to write a follow-up report. 
 As an analyst, you can inspect network traffic and network data to determine what is causing network-related issues during cybersecurity incidents. Later in this course, you will demonstrate how to manage and resolve incidents. For now, you only need to analyze the situation. 
 This incident, in the meantime, is being handled by security engineers after you and other analysts have reported the issue to your direct supervisor. 
+
+ # Cybersecurity Incident Report: Network Traffic Analysis
+```
+**Part 1: Provide a summary of the problem found in the DNS and ICMP 
+traffic log**
+The UDP protocol reveals that the DNS server is down or unreachable. As evident by the results of the network analysis, the ICMP echo reply returned the error message “udp port 53 unreachable,” Port 53 is commonly used for DNS protocol traffic. It is highly likely that the DNS server is not responding.
+```

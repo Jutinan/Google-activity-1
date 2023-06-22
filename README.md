@@ -23,10 +23,12 @@ This incident, in the meantime, is being handled by security engineers after you
  # Cybersecurity Incident Report: Network Traffic Analysis
 
 **Part 1: Provide a summary of the problem found in the DNS and ICMP 
-traffic log**
+traffic log:**
+
 The UDP protocol reveals that the DNS server is down or unreachable. As evident by the results of the network analysis, the ICMP echo reply returned the error message “udp port 53 unreachable,” Port 53 is commonly used for DNS protocol traffic. It is highly likely that the DNS server is not responding.
 
-**Part 2: Explain your analysis of the data and provide one solution to implement**
+**Part 2: Explain your analysis of the data and provide one solution to implement:**
+
 The incident occurred today from 1:23 PM to 1:28 PM. Customers called the organization to notify the IT team that they got the message “destination port unreachable” when they attempted to visit the website. In our investigation into the issue, we conducted packet sniffing tests using tcpdump. We found that DNS port 53 was unreachable. The next step is to identify whether the DNS server is down or traffic to port 53 is blocked by the firewall. The DNS server might be down due to a successful DoS attack or a misconfiguration.
 
 **DNS & ICMP traffic log**
